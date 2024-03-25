@@ -1,0 +1,45 @@
+﻿<Window x:Class="WpfApplication7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication7"
+        mc:Ignorable="d"
+    MinHeight="350"
+    MinWidth="525"
+    Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <StackPanel  Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+            <Label Content="Имя: " FontSize="20" />
+            <TextBox x:Name="tbName" FontSize="20" Width="300" />
+        </StackPanel>
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+            <Label Content="Фамилия: " FontSize="20" />
+            <TextBox x:Name="tbSubName" FontSize="20" Width="300" />
+        </StackPanel>
+        <StackPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+            <Label Content="Возраст: " FontSize="20" />
+            <TextBox x:Name="tbAge" FontSize="20" Width="300" />
+        </StackPanel>
+        <StackPanel Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+            <Label Content="Номер: " FontSize="20" />
+            <TextBox x:Name="tbNumber" FontSize="20" Width="300" />
+        </StackPanel>
+        <StackPanel Grid.Row="4" HorizontalAlignment="Center"  VerticalAlignment="Center" Orientation="Horizontal">
+            <Label Content="День рождения:" FontSize="20" />
+            <DatePicker x:Name="dpBirghtday" FontSize="20" Width="300" SelectedDateChanged="dpBirghtday_SelectedDateChanged" />
+        </StackPanel>
+        <StackPanel Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+            <Button x:Name="bSend" Content="Регистрация" Padding="50 5" FontSize="20" Click="bSend_Click" />
+        </StackPanel>
+
+    </Grid>
+</Window>
